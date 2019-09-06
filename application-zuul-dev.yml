@@ -13,6 +13,8 @@ zuul:
     fastdfs.path: /fastdfs/** # 把myUser打头的所有请求都转发给user-provider
     es.serviceId: hrm-es # 服务名
     es.path: /es/** # 把myUser打头的所有请求都转发给user-provider
+    redis.serviceId: hrm-redis # 服务名
+    redis.path: /redis/** # 把myUser打头的所有请求都转发给user-provider
   ignored-services: "*" #所有服务都不允许以服务名来访问
   prefix: "/services" #加一个统一前缀
   retryable: true #是否重试
